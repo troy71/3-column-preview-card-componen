@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&family=Lexend+Deca:wght@100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --clr-bright-orange: hsl(31, 77%, 52%);
+  --clr-dark-cyan: hsl(184, 100%, 22%);
+  --clr-very-dark-cyan: hsl(179, 100%, 13%);
+  --clr-transparent-white: hsl(0, 0%, 100%, 0.75);
+  --clr-light-gray: hsl(0, 0%, 95%);
+  --clr-white: hsl(0, 0%, 100%);
+
+  --ff-big-shoulders: Big Shoulders, sans-serif;
+  --ff-lexend-deca: Lexend Deca, sans-serif;
+
+  --fs-15: .9375rem;
+  --fs-40: 2.5rem;
+  --fw-400: 400;
+  --fw-700: 700;
+}  
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  background-color: var(--clr-light-gray);
+}
+
+.container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 100vh;
+  color: var(--clr-light-gray);
+  max-width: 57.5rem;
+  width: 100%;
+  border-radius: 0.5rem;
+}
+
+.sedan{
+  border-radius: 8px 0 0 8px;
+}
+.orange{
+  background-color: var(--clr-bright-orange);
+}
+
+.green{
+  background-color: var(--clr-dark-cyan);
+}
+
+.dark-green{
+  background-color: var(--clr-very-dark-cyan);
+}
+
+.luxury{
+  border-radius: 0 8px 8px 0;
+}
+
+.padding{
+  padding: 3rem
+}
+
+h2{
+  font-family: var(--ff-big-shoulders);
+  font-weight: var(--fw-700);
+  font-size: var(--fs-40);
+  margin-top: 2.1875rem;
+  margin-bottom: 1.5625rem;
+}
+
+p{
+  font-family: var(--ff-lexend-deca);
+  font-weight: var(--fw-400);
+  font-size: var(--fs-15);
+  color: var(--clr-transparent-white);
+  line-height: 25px;
+  margin-bottom: 5.1875rem;
+}
+
+button{
+  padding: .75rem 2rem;
+  border-radius: 1.5625rem;
+  border: .125rem solid transparent;
+  font-family: var(--ff-lexend-deca);
+  font-size: var(--fs-15);
+}
+
+.btn-yellow{
+  color: var(--clr-bright-orange);
+}
+
+.btn-dark-cyan{
+  color: var(--clr-dark-cyan);
+}
+
+.bt-very-dark-green{
+  color: var(--clr-very-dark-cyan);
+}
+
+.btn-yellow:hover,
+.btn-dark-cyan:hover,
+.bt-very-dark-green:hover{
+  background-color: transparent;
+  color: var(--clr-white);
+  cursor: pointer;
+  border: .125rem solid var(--clr-white);
+}
+
+@media (max-width: 480px) {
+ .container{
+  flex-direction: column;
+ }
+.sedan{
+  border-radius: 0 0 0 0;
+}
+
+.luxury{
+  border-radius: 0 0 0 0;
+}
+
+}
