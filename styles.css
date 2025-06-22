@@ -77,7 +77,7 @@ p{
   font-weight: var(--fw-400);
   font-size: var(--fs-15);
   color: var(--clr-transparent-white);
-  line-height: 25px;
+  line-height: 1.5625rem;
   margin-bottom: 5.1875rem;
 }
 
@@ -110,7 +110,7 @@ button{
   border: .125rem solid var(--clr-white);
 }
 
-@media (max-width: 480px) {
+@media (max-width: 30rem) {
  .container{
   flex-direction: column;
  }
