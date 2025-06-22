@@ -1,2 +1,2 @@
-# 3-column-preview-card-componen
+# 3-column-preview-card-component
 Another Frontend Challenge
